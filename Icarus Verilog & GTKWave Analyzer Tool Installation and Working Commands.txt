@@ -1,0 +1,21 @@
+INSTALLATION:-
+1) You can install the stable versions of these open source tools from the Ubuntu packages.
+   I am installing these tools in Ubuntu 24.04.1 LTS Application of WSL (Windows Subsytem Linux)
+2) Enter the below commands in the terminal:
+   sudo apt update
+   sudo apt install -y iverilog gtkwave
+3) Enter the below commands to check whether they installed correctly by printing their version names:
+   iverilog -V
+   Prints Icarus Verilog Parser/Elaborator version 12.0 (stable)
+   gtkwave --version or gtkwave -V
+   Prints GTKWave Analyzer v3.3.116
+
+WORKING COMMANDS:
+1) Create your RTL design and testbench modules using vim editor.
+2) Add the below lines in the initial block of your testbench module:
+   $dumpfile("test.vcd");
+   $dumpvars(0, test);
+3) Enter the below commands:
+   iverilog -o <main_module_name> <testbench_name.v> <main_design_module_name.v> <sub_design_module_name.v>
+   vvp <main_module_name>
+   gtkwave test.vcd
