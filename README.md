@@ -1,5 +1,5 @@
-# RTL Drive Open-Source Tools
-## 1) AMD Vivado ML Stadard Edition v2025.1
+# RTL Free Tools
+## 1) AMD Vivado ML Stadard Edition v2025.1 (Recommended)
 AMD Vivado ML Standard Edition v2025.1 is a popular free tool that provides a comprehensive set of capabilities for designing, implementing and verifying Register-Transfer Level (RTL) designs targeting a specific subset of AMD's FPGA and Adaptive SoC devices. While it's the free edition and has device limitations, its core RTL design features are quite robust that are comparable to commercial simulators.
 ### Here's a breakdown of its RTL Design capabilities:
 ### 1) RTL Design entry and management
@@ -17,7 +17,8 @@ The built-in Vivado Simulator allows for behavioral and structural logic simulat
 All design flows and analysis features can be accessed and controlled via Tcl commands, either interactively in the Tcl console or through scripting for automation, enabling scripting for automation and customization of the design flow.
 ### 4) Limited Device Support:
 The main distinction of the Standard Edition is its limited device support, typically including a subset of AMD's FPGA and Adaptive SoC families. According to AMD's support documentation, aside from device support, there are generally no feature differences between the Standard and Enterprise editions.
-## 2) Icarus Verilog v12.0
+# RTL Open-Source Tools
+## 1) Icarus Verilog v12.0
 Icarus Verilog is a popular open-source tool that serves as both a compiler and a simulator for the Verilog Hardware Description Language. It's a free and widely used alternative to commercial simulators.
 ### Here's a breakdown of its key aspects:
 ### 1) Compiler
